@@ -104,13 +104,32 @@ printit alice bob
 # [[ number -gt number2 ]] greater than
 # [[ number -ge number2 ]] greater than or equal to
 # (( number > number2 )) evaluate the math and return something
-
+echo Please enter a number:
+read number1
+echo Please enter a number:
+read number2
+cond_test(){
+    if [[ $1 -eq $2 ]]; then
+        printf 'Hello!\n'
+    else printf 'Goodbye.\n'
+    fi
+}
+cond_test number1 number2
 # Now write a function that prints two numbers on screen and takes an input. if
 # the input equals to the sum of the two number, it prints "correct" else it
 # prints "incorrect"
-
-
-
+echo Number1 is $number1.
+echo Number2 is $number2.
+sum=($number1+$number2)
+echo What is their sum?
+read number3
+check_eq(){
+    if [[ $1 -eq $sum ]]; then
+    printf 'That is correct!\n'
+    else printf ' That is incorrect.\n'
+    fi
+}
+check_eq number3
 ############################
 # Once done with it 
 # Use a while loop
