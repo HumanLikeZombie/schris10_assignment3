@@ -144,3 +144,15 @@ check_eq number3
 # Note $RANDOM gives a big random number. But taking a modulo of that number
 # with any number n would ensure that the random number is always within the
 # range of 1-n
+number1=$RANDOM
+number2=$RANDOM
+sum=($number1+$number2)
+#echo What is their sum?
+#read number3
+check_eq(){
+    while :
+    do
+        echo ($1)
+    done
+}
+check_eq sum
