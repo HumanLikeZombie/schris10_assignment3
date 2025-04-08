@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Copyright (c) Vijay Banerjee 10-29-24
-#
+# Copyright (c) Spencer Christiansen 04-07-2025
 #
 
 # We have already seen a few common bash commands.
