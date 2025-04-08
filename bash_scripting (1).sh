@@ -14,11 +14,12 @@ variable_name="something"
 
 ############
 # Write the command to print this variable
-
+echo $variable_name #or
+printf $variable_name'\n'
 ############
 # Now print the following using the variable
 # "Here is the value of the variable: something"
-
+echo Here is the value of the variable: $variable_name
 ###########
 
 # We learned that output of a command is a stream of data that can be treated as
@@ -28,7 +29,8 @@ variable_name="something"
 # Write the command to print the present working directory with the following
 # string
 # "I am currently in this directory: <name of the present working directory>"
-
+printf 'I am currently in this directory:' $pwd #'\n'
+echo $pwd
 ##########
 
 # Pointing to another variable using !
