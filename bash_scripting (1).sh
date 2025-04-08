@@ -159,6 +159,10 @@ check_eq(){
         echo "What is their sum?"
         read number3
         echo $number3
+        if [[ $number3 -eq $sum ]]; then
+        echo "That is correct!"
+        else echo "That is incorrect. Correct sum is $sum."
+        fi
     done
 }
-check_eq sum
+check_eq
